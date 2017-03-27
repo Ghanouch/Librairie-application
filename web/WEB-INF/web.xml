@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.1" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd">
+    <display-name>LibApp</display-name>
+    <servlet>
+        <servlet-name>Books</servlet-name>
+        <servlet-class>Controllers.BookServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Books</servlet-name>
+        <url-pattern>/books</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>authentification</servlet-name>
+        <servlet-class>Controllers.AuthentificationServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>authentification</servlet-name>
+        <url-pattern>/identity</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>AdherentProcess</servlet-name>
+        <servlet-class>Controllers.AdherentProcess</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>AdherentProcess</servlet-name>
+        <url-pattern>/AdherentProcess</url-pattern>
+    </servlet-mapping>
+      <servlet>
+        <servlet-name>ReservationServlet</servlet-name>
+        <servlet-class>Controllers.ReservationServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ReservationServlet</servlet-name>
+        <url-pattern>/ReservationServlet</url-pattern>
+    </servlet-mapping>
+</web-app>
